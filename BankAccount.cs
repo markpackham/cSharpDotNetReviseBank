@@ -14,15 +14,15 @@
                 {
                     balance += item.Amount;
                 }
-            };
+                return balance;
+            }
         }
         private static int accountNumberSeed = 1234567890;
         private List<Transaction> allTransactions = new List<Transaction>();
 
-        public BankAccount(string owner, decimal balance)
+        public BankAccount(string owner)
         {
             Owner = owner;
-            Balance = balance;
             Number = accountNumberSeed.ToString();
             accountNumberSeed++;
         }
