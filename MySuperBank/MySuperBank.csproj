@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Humanizer.Core" Version="2.13.14" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BankyStuffLibrary\BankyStuffLibrary.csproj" />
   </ItemGroup>
 

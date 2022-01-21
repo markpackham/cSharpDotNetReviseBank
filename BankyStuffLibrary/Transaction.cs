@@ -9,8 +9,8 @@ namespace BankyStuffLibrary
         public string AmountForHumans 
     { get
             {
-                return Amount.ToWords();
-            }; 
+                return ((long)Amount).ToWords();
+            } 
     }
         public DateTime Date { get; }
         public string Notes { get; }
