@@ -11,12 +11,14 @@ namespace MySuperBank
         public string Number { get; }
         public string Owner { get; set; }
         public decimal Balance { get; }
+        private static int accountNumberSeed = 1234567890;
 
-        public BankAccount(string number, string owner, decimal balance)
+        public BankAccount(string owner, decimal balance)
         {
-            Number = number;
             Owner = owner;
             Balance = balance;
+            Number = accountNumberSeed.ToString();
+            accountNumberSeed++;
         }
 
         public void MakeDeposit(decimal amount, DateTime date, string note)
