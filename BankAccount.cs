@@ -65,7 +65,7 @@ namespace MySuperBank
             foreach (var item in allTransactions)
             {
                 // Rows
-                report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{item.Notes}");
+                report.AppendLine($"{item.Date.ToShortDateString()}\t£{item.Amount}\t{item.Notes}");
             }
             return report.ToString();
         }
