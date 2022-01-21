@@ -20,9 +20,12 @@
         private static int accountNumberSeed = 1234567890;
         private List<Transaction> allTransactions = new List<Transaction>();
 
-        public BankAccount(string owner)
+        public BankAccount(string owner, decimal initialBalance)
         {
             Owner = owner;
+
+            MakeDeposit(initialBalance, DateTime.Now, "Initial Balance");
+
             Number = accountNumberSeed.ToString();
             accountNumberSeed++;
         }
